@@ -1,21 +1,25 @@
+import ExternalLink from '../components/ExternalLink.jsx'
+import Section from '../components/Section.jsx'
 import projects from '../data/projects.json'
 
 function ProjectLink({ project }) {
   return (
-    <a className="project-link" href={project.href}>
+    <ExternalLink className="project-link" href={project.href}>
       <span><strong>{project.name}</strong><span>{project.description}</span></span>
       <span aria-hidden="true">↗</span>
-    </a>
+    </ExternalLink>
   )
 }
 
 function SideProjects() {
   return (
-    <aside className="beyond" aria-labelledby="beyond-title">
+    <Section id="projects" className="projects-section" contentClassName="projects-layout" labelledBy="beyond-title">
       <h2 id="beyond-title">{projects.heading}</h2>
-      <p>{projects.intro}</p>
-      {projects.items.map(project => <ProjectLink key={project.name} project={project} />)}
-    </aside>
+      <div className="beyond">
+        <p>{projects.intro}</p>
+        {projects.items.map(project => <ProjectLink key={project.name} project={project} />)}
+      </div>
+    </Section>
   )
 }
 

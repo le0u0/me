@@ -1,3 +1,4 @@
+import ExternalLink from '../components/ExternalLink.jsx'
 import Section from '../components/Section.jsx'
 import profile from '../data/profile.json'
 
@@ -10,7 +11,7 @@ function Contact() {
       </div>
       <div className="contact-links">
         {profile.contact.links.map(link => (
-          <a key={link.href} href={link.href}>{link.label}<span aria-hidden="true">↗</span></a>
+          <ExternalLink key={link.href} href={link.href}>{link.label}<span aria-hidden="true">↗</span></ExternalLink>
         ))}
       </div>
     </Section>

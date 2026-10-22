@@ -1,3 +1,4 @@
+import ExternalLink from '../components/ExternalLink.jsx'
 import Section from '../components/Section.jsx'
 import profile from '../data/profile.json'
 
@@ -11,7 +12,7 @@ function Intro() {
       <div className="hero-intro">
         <h2>{profile.intro.headline}</h2>
         <p>{profile.intro.description}</p>
-        <a className="button" href={profile.links.github}>{profile.intro.githubLabel}</a>
+        <ExternalLink className="button" href={profile.links.github}>{profile.intro.githubLabel}</ExternalLink>
       </div>
     </Section>
   )

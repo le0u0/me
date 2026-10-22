@@ -14,7 +14,6 @@ function ExperienceItem({ experience }) {
 function Experience() {
   return (
     <div className="experience-column">
-      <h2 id="experience-title">{profile.experienceHeading}</h2>
       {profile.experience.map(experience => (
         <ExperienceItem key={experience.company} experience={experience} />
       ))}

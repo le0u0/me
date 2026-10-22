@@ -1,20 +1,22 @@
 import profile from '../data/profile.json'
 import ThemeToggle from './ThemeToggle.jsx'
+import ExternalLink from './ExternalLink.jsx'
 
-function SiteHeader() {
+function SiteHeader({ currentPage }) {
   return (
-    <>
-      <a className="skip-link" href="#main">{profile.accessibility.skipToContent}</a>
-      <header className="site-header wrap">
-        <span className="wordmark">{profile.name}</span>
-        <div className="header-actions">
-          <nav aria-label={profile.accessibility.mainNavigation}>
-            {profile.navigation.map(link => <a key={link.href} href={link.href}>{link.label}</a>)}
-          </nav>
-          <ThemeToggle />
-        </div>
-      </header>
-    </>
+    <header className="site-header wrap">
+      <a className="wordmark" href={profile.homeHref}>{profile.brand}</a>
+      <div className="header-actions">
+        <nav aria-label={profile.accessibility.mainNavigation}>
+          {profile.navigation.map(link => link.href.startsWith('/') ? (
+            <a key={link.href} href={link.href} aria-current={link.href === currentPage ? 'page' : undefined}>{link.label}</a>
+          ) : (
+            <ExternalLink key={link.href} href={link.href}>{link.label}</ExternalLink>
+          ))}
+        </nav>
+        <ThemeToggle />
+      </div>
+    </header>
   )
 }
 

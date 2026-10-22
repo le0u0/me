@@ -1,5 +1,5 @@
 # Leo Ho
 
-Analyst Programmer building production software and tools for AI-assisted development. I work in healthcare technology and explore new ideas through side projects and developer plugins.
+Analyst Programmer turning complex workflows into working software.
 
-[Visit my website](https://daphneo.com/)
+[Website](https://daphneo.com/) · [GitHub](https://github.com/le0u0)

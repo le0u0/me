@@ -1,5 +1,9 @@
 {
   "name": "Leo Ho",
+  "brand": "me",
+  "welcome": {
+    "text": "hi, it's me"
+  },
   "title": "Analyst Programmer",
   "intro": {
     "greeting": "Hello,",
@@ -37,20 +41,22 @@
   "experienceHeading": "Where I’ve been.",
   "navigation": [
     {
+      "label": "Home",
+      "href": "/",
+      "page": "home"
+    },
+    {
       "label": "About",
-      "href": "#about"
+      "href": "/about/",
+      "page": "about"
     },
     {
-      "label": "Experience",
-      "href": "#experience"
-    },
-    {
-      "label": "Contact",
-      "href": "https://www.linkedin.com/in/le0u0/"
+      "label": "Downloads",
+      "href": "/downloads/",
+      "page": "download"
     }
   ],
   "accessibility": {
-    "skipToContent": "Skip to content",
     "mainNavigation": "Main navigation"
   },
   "contact": {
@@ -69,11 +75,20 @@
   },
   "footer": "Made with curiosity. Built to keep growing.",
   "metadata": {
-    "title": "Leo Ho — Analyst Programmer",
+    "title": "me",
     "description": "Leo Ho, Analyst Programmer. Building production software, side projects, and tools for AI-assisted development."
   },
   "theme": {
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
+  },
+  "homeHref": "/",
+  "downloads": {
+    "heading": "Downloads",
+    "description": "A closer look at my experience, skills, and background.",
+    "format": "PDF",
+    "label": "Download CV",
+    "href": "https://drive.google.com/uc?export=download&id=1FHqeCC4BhXU1ioPlDsbKGjSyIAYi1ThX",
+    "unavailable": "CV download will be available soon."
   }
 }
