@@ -18,7 +18,9 @@ npm run build
 
 ## Deployment
 
-Cloudflare Pages: build command `npm run build`, output directory `dist`.
+GitHub Pages builds and deploys `dist` automatically on pushes to `main`.
+In repository Settings → Pages, set Source to GitHub Actions and custom domain to `daphneo.com`.
+Cloudflare manages the domain and DNS.
 
 ## Workflow
 
