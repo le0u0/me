@@ -1,0 +1,79 @@
+{
+  "name": "Leo Ho",
+  "title": "Analyst Programmer",
+  "intro": {
+    "greeting": "Hello,",
+    "namePrefix": "I’m",
+    "headline": "From complex problems to working software.",
+    "description": "I build production software and tools for AI-assisted development. Alongside my work in healthcare technology, I’m exploring ideas through side projects and plugins.",
+    "githubLabel": "Find me on GitHub"
+  },
+  "about": {
+    "lead": "I like making complicated things easier to work with.",
+    "paragraphs": [
+      "For the past four years, I’ve worked on clinic-management software used by more than 600 clinics and 2,000 doctors. My work spans understanding requirements, shaping technical solutions, writing code, testing, and seeing changes through to production.",
+      "I’m equally interested in how software gets built: reusable architecture, thoughtful code reviews, reliable tests, and practical ways to bring AI into the development process."
+    ],
+    "heading": "A builder’s mindset."
+  },
+  "experience": [
+    {
+      "company": "Apricot Medical Technology",
+      "date": "2022 — present",
+      "role": "Analyst Programmer",
+      "description": "Building clinical workflows, reusable components, and integrations for a clinic-management platform. Supporting engineering quality through code review, mentoring, and automated testing."
+    },
+    {
+      "company": "BG Enterprises",
+      "date": "Jan — May 2022",
+      "role": "Programmer",
+      "description": "Built reusable Flutter widgets for an internal mobile prototype and worked on an Angular back-office system."
+    }
+  ],
+  "links": {
+    "github": "https://github.com/le0u0",
+    "linkedin": "https://www.linkedin.com/in/le0u0/"
+  },
+  "experienceHeading": "Where I’ve been.",
+  "navigation": [
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Contact",
+      "href": "https://www.linkedin.com/in/le0u0/"
+    }
+  ],
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation"
+  },
+  "contact": {
+    "label": "Keep in touch",
+    "heading": "Good things start with a conversation.",
+    "links": [
+      {
+        "label": "Connect on LinkedIn",
+        "href": "https://www.linkedin.com/in/le0u0/"
+      },
+      {
+        "label": "Explore my GitHub",
+        "href": "https://github.com/le0u0"
+      }
+    ]
+  },
+  "footer": "Made with curiosity. Built to keep growing.",
+  "metadata": {
+    "title": "Leo Ho — Analyst Programmer",
+    "description": "Leo Ho, Analyst Programmer. Building production software, side projects, and tools for AI-assisted development."
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  }
+}

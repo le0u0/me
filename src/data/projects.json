@@ -1,0 +1,16 @@
+{
+  "intro": "I’m building side projects and tools that make AI-assisted development more useful in everyday work.",
+  "items": [
+    {
+      "name": "agent-workflow",
+      "href": "https://github.com/le0u0/plugins/tree/main/agent-workflow",
+      "description": "Planning, implementation, testing, and review with specialist agents."
+    },
+    {
+      "name": "agent-notifier",
+      "href": "https://github.com/le0u0/plugins/tree/main/agent-notifier",
+      "description": "macOS notifications when an agent needs attention or finishes its work."
+    }
+  ],
+  "heading": "Beyond the day job."
+}
