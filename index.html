@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>me</title>
+    <meta name="theme-color" content="#F7F8FA" />
+    <script>
+      let theme = 'light'
+      try {
+        if (localStorage.getItem('theme') === 'dark') theme = 'dark'
+      } catch {
+        // Use light mode when browser storage is unavailable.
+      }
+      document.documentElement.dataset.theme = theme
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#151820' : '#F7F8FA'
+    </script>
   </head>
   <body>
     <div id="root"></div>

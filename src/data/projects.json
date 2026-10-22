@@ -1,0 +1,11 @@
+{
+  "intro": "I’m building side projects and tools that make AI-assisted development more useful in everyday work.",
+  "items": [
+    {
+      "name": "plugins",
+      "href": "https://github.com/le0u0/plugins",
+      "description": "Plugins for AI coding agents, covering development workflows and macOS notifications."
+    }
+  ],
+  "heading": "Beyond the day job."
+}
