@@ -122,3 +122,8 @@ nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; t
   .welcome { display: none; animation: none; }
   .handwritten path { animation: none; opacity: 1; stroke-dashoffset: 0; }
 }
+
+.profile-card { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+.profile-card img { border-radius: 50%; flex: none; }
+.profile-card strong { display: block; color: var(--accent); font-weight: 600; }
+.profile-card span > span { display: block; font-size: .87rem; color: var(--muted); line-height: 1.65; max-width: 38ch; }
