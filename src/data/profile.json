@@ -49,11 +49,6 @@
       "label": "About",
       "href": "/about/",
       "page": "about"
-    },
-    {
-      "label": "Downloads",
-      "href": "/downloads/",
-      "page": "download"
     }
   ],
   "accessibility": {
@@ -82,13 +77,5 @@
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
   },
-  "homeHref": "/",
-  "downloads": {
-    "heading": "Downloads",
-    "description": "A closer look at my experience, skills, and background.",
-    "format": "PDF",
-    "label": "Download CV",
-    "href": "https://drive.google.com/uc?export=download&id=1FHqeCC4BhXU1ioPlDsbKGjSyIAYi1ThX",
-    "unavailable": "CV download will be available soon."
-  }
+  "homeHref": "/"
 }
