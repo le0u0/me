@@ -6,9 +6,7 @@ function Intro() {
   return (
     <Section className="hero-section" contentClassName="hero" labelledBy="intro-title">
       <div className="hero-name">
-        <h1 id="intro-title">{profile.intro.greeting}<br />{profile.intro.namePrefix} {profile.name}<span>.</span></h1>
-        <p className="role">{profile.title}</p>
-      </div>
+        <h1 id="intro-title">{profile.intro.greeting}<br />{profile.intro.namePrefix} {profile.name}<span>.</span></h1>      </div>
       <div className="hero-intro">
         <h2>{profile.intro.headline}</h2>
         <p>{profile.intro.description}</p>

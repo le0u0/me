@@ -4,41 +4,44 @@
   "welcome": {
     "text": "hi, it's me"
   },
-  "title": "Analyst Programmer",
   "intro": {
     "greeting": "Hello,",
     "namePrefix": "I’m",
     "headline": "From complex problems to working software.",
-    "description": "I build production software and tools for AI-assisted development. Alongside my work in healthcare technology, I’m exploring ideas through side projects and plugins.",
+    "description": "Software developer who builds for fun, to learn new tech, and to make my own development work more convenient, mostly with small tools and plugins. A gamer at heart, from board and card games to video games, which is why I’m building one: DFA, a side-view action game in Godot.",
     "githubLabel": "Find me on GitHub"
   },
   "about": {
-    "lead": "I like making complicated things easier to work with.",
+    "lead": "Curious about new tech, impatient with repetitive work.",
     "paragraphs": [
-      "For the past four years, I’ve worked on clinic-management software used by more than 600 clinics and 2,000 doctors. My work spans understanding requirements, shaping technical solutions, writing code, testing, and seeing changes through to production.",
-      "I’m equally interested in how software gets built: reusable architecture, thoughtful code reviews, reliable tests, and practical ways to bring AI into the development process."
+      "Since 2022, I’ve worked on clinic-management software used by more than 600 clinics and 2,000 doctors. I take features end to end, from the first requirement to production.",
+      "Outside work, I ship the things I want to use: developer tools that anyone can install from my own plugin marketplace, and an action game I’m building, because I love games. Each project is an excuse to learn something new."
     ],
-    "heading": "A builder’s mindset."
+    "heading": "Side quests welcome."
   },
   "experience": [
     {
       "company": "Apricot Medical Technology",
       "date": "2022 — present",
       "role": "Analyst Programmer",
-      "description": "Building clinical workflows, reusable components, and integrations for a clinic-management platform. Supporting engineering quality through code review, mentoring, and automated testing."
+      "description": "Building features in Angular, from day-to-day clinical workflows to the patient form used by many of our clients."
     },
     {
       "company": "BG Enterprises",
       "date": "Jan — May 2022",
       "role": "Programmer",
-      "description": "Built reusable Flutter widgets for an internal mobile prototype and worked on an Angular back-office system."
+      "description": "Worked across mobile and web: an internal mobile prototype in Flutter and a back-office system in Angular."
     }
   ],
   "links": {
     "github": "https://github.com/le0u0",
     "linkedin": "https://www.linkedin.com/in/le0u0/"
   },
-  "experienceHeading": "Where I’ve been.",
+  "equipment": {
+    "heading": "The equipment.",
+    "items": ["Angular", "TypeScript", "React", "Node.js", "Flutter", "Godot"]
+  },
+  "experienceHeading": "The main quest.",
   "navigation": [
     {
       "label": "Home",
@@ -71,7 +74,7 @@
   "footer": "Made with curiosity. Built to keep growing.",
   "metadata": {
     "title": "me",
-    "description": "Leo Ho, Analyst Programmer. Building production software, side projects, and tools for AI-assisted development."
+    "description": "Leo Ho, software developer. Building tools, plugins and games for fun and to learn new tech."
   },
   "theme": {
     "switchToDark": "Switch to dark mode",
