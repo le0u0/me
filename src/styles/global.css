@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;450;500;600;650;700&display=swap');
 
+/* Tokens */
+
 :root {
   font-family: 'Public Sans', sans-serif;
   color: var(--ink);
@@ -17,6 +19,7 @@
   --line: #CBD2E2;
   --button-bg: #315BFF;
   --button-hover: #2246D0;
+  --button-ink: white;
 }
 
 :root[data-theme="dark"] {
@@ -27,21 +30,132 @@
   --accent: #A3B4FF;
   --surface: #1D2332;
   --line: #394256;
+  --button-bg: #A3B4FF;
+  --button-hover: #C2CDFF;
+  --button-ink: #151820;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
-body { margin: 0; }
-a { color: inherit; text-decoration: none; }
-button, a { -webkit-tap-highlight-color: transparent; }
-a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
-a:hover { color: var(--accent); }
-p { line-height: 1.75; margin: 0 0 1.25rem; text-wrap: pretty; }
-h1, h2, h3 { margin: 0; font-weight: 500; text-wrap: balance; }
-h2 { font-size: clamp(1.8rem, 3vw, 2.65rem); letter-spacing: -.035em; line-height: 1.2; }
-.wrap { width: min(1200px, calc(100% - 112px)); margin-inline: auto; }
-.button { display: inline-flex; padding: 15px 22px; background: var(--button-bg); color: white; border-radius: 7px; font-size: .9rem; }
-.button:hover { background: var(--button-hover); color: white; }
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 6px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+p {
+  line-height: 1.75;
+  margin: 0 0 1.25rem;
+  text-wrap: pretty;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 2.7vw, 2.2rem);
+  letter-spacing: -.035em;
+  line-height: 1.2;
+}
+
+/* Layout */
+
+.wrap {
+  width: min(1200px, calc(100% - 112px));
+  margin-inline: auto;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: var(--column-gap);
+  align-items: start;
+}
+
+/* Contact */
+
+.contact-section {
+  background: var(--surface);
+  color: var(--ink);
+  padding-block: 72px;
+}
+
+.contact-section a:hover {
+  color: var(--accent);
+}
+
+.contact-section a:focus-visible {
+  outline-color: var(--accent);
+}
+
+.contact-layout {
+  align-items: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-links a {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 15px;
+  font-size: .95rem;
+}
+
+/* Button */
+
+.button {
+  display: inline-flex;
+  padding: 15px 22px;
+  background: var(--button-bg);
+  color: var(--button-ink);
+  border-radius: 7px;
+  font-size: .9rem;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  color: var(--button-ink);
+}
+
+/* Theme toggle */
 
 .theme-toggle {
   display: inline-flex;
@@ -57,4 +171,183 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.65rem); letter-spacing: -.035em; line-heigh
   color: var(--ink);
   cursor: pointer;
 }
-.theme-toggle:hover { background: var(--surface); color: var(--accent); }
+
+.theme-toggle:hover {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+/* Header */
+
+.site-header {
+  min-height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.wordmark {
+  font-weight: 650;
+  font-size: 1.5rem;
+  letter-spacing: -.04em;
+}
+
+nav {
+  display: flex;
+  gap: 34px;
+  font-size: .9rem;
+}
+
+nav a[aria-current="page"] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+nav a[aria-current="page"]:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Footer */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 28px;
+  font-size: .8125rem;
+  color: var(--muted);
+}
+
+.site-footer > span:first-child {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Welcome */
+
+.welcome {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: var(--background);
+  color: var(--accent);
+  touch-action: none;
+  animation: welcome-exit 2000ms ease forwards;
+}
+
+.handwritten {
+  width: min(80vw, 580px);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.handwritten path {
+  opacity: 0;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: handwriting 240ms linear calc(var(--stroke) * 130ms) forwards;
+}
+
+@keyframes handwriting {
+  0% { opacity: 0; }
+  1% { opacity: 1; }
+  100% { opacity: 1; stroke-dashoffset: 0; }
+}
+
+@keyframes welcome-exit {
+  0%, 90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Motion */
+
+@media (prefers-reduced-motion: no-preference) {
+  .button {
+    transition: background .15s ease;
+  }
+
+  .contact-links a > span {
+    transition: transform 180ms cubic-bezier(.16, 1, .3, 1);
+  }
+
+  .contact-links a:hover > span, .contact-links a:focus-visible > span {
+    transform: translate(3px, -3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .welcome {
+    display: none;
+    animation: none;
+  }
+
+  .handwritten path {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .wrap {
+    width: calc(100% - 64px);
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contact-section {
+    padding-block: 56px;
+  }
+
+  .site-header {
+    min-height: 86px;
+    gap: 16px;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .wordmark {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    gap: 12px;
+    font-size: .8125rem;
+  }
+
+  .site-footer {
+    flex-wrap: wrap;
+    gap: 18px;
+    line-height: 1.6;
+  }
+}

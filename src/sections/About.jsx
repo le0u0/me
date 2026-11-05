@@ -3,7 +3,7 @@ import profile from '../data/profile.json'
 
 function About() {
   return (
-    <Section id="about" labelledBy="about-title" className="about-section" contentClassName="about-layout">
+    <Section id="about" labelledBy="about-title" className="about-section" contentClassName="split about-layout">
       <h1 id="about-title">{profile.about.heading}</h1>
       <div className="about-copy">
         <p className="lead">{profile.about.lead}</p>
