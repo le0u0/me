@@ -2,7 +2,6 @@ import SiteHeader from './components/SiteHeader.jsx'
 import Welcome from './components/Welcome.jsx'
 import SiteFooter from './components/SiteFooter.jsx'
 import profile from './data/profile.json'
-import './styles/home.css'
 
 const pages = import.meta.glob('./pages/*/index.jsx', { eager: true, import: 'default' })
 

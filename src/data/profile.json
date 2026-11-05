@@ -5,11 +5,7 @@
     "text": "hi, it's me"
   },
   "intro": {
-    "greeting": "Hello,",
-    "namePrefix": "I’m",
-    "headline": "From complex problems to working software.",
-    "description": "Software developer who builds for fun, to learn new tech, and to make my own development work more convenient, mostly with small tools and plugins. A gamer at heart, from board and card games to video games, which is why I’m building one: DFA, a side-view action game in Godot.",
-    "githubLabel": "Find me on GitHub"
+    "role": "Software developer"
   },
   "about": {
     "lead": "Curious about new tech, impatient with repetitive work.",
@@ -38,8 +34,15 @@
     "linkedin": "https://www.linkedin.com/in/le0u0/"
   },
   "equipment": {
-    "heading": "The equipment.",
-    "items": ["Angular", "TypeScript", "React", "Node.js", "Flutter", "Godot"]
+    "label": "Tech I work with",
+    "items": [
+      { "name": "Angular", "icon": "angular" },
+      { "name": "TypeScript", "icon": "typescript" },
+      { "name": "React", "icon": "react" },
+      { "name": "Node.js", "icon": "nodedotjs" },
+      { "name": "Flutter", "icon": "flutter" },
+      { "name": "Godot", "icon": "godotengine" }
+    ]
   },
   "experienceHeading": "The main quest.",
   "navigation": [
@@ -58,20 +61,18 @@
     "mainNavigation": "Main navigation"
   },
   "contact": {
-    "label": "Keep in touch",
-    "heading": "Good things start with a conversation.",
+    "heading": "Let’s talk.",
     "links": [
+      {
+        "label": "Send an email",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=yfho0517@gmail.com"
+      },
       {
         "label": "Connect on LinkedIn",
         "href": "https://www.linkedin.com/in/le0u0/"
-      },
-      {
-        "label": "Explore my GitHub",
-        "href": "https://github.com/le0u0"
       }
     ]
   },
-  "footer": "Made with curiosity. Built to keep growing.",
   "metadata": {
     "title": "me",
     "description": "Leo Ho, software developer. Building tools, plugins and games for fun and to learn new tech."

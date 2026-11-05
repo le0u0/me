@@ -4,7 +4,7 @@ function SiteFooter() {
   return (
     <footer className="wrap site-footer">
       <span>{profile.name}</span>
-      <span>{profile.footer}</span>
+      <span>© {new Date().getFullYear()}</span>
     </footer>
   )
 }
